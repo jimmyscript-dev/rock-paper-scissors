@@ -110,7 +110,7 @@ document.querySelector('.js-rock-btn').addEventListener('click', () => {
 })
 
 document.querySelector('.js-paper-btn').addEventListener('click', () => {
-  playGame('🖐')
+  playGame('✋')
 })
 
 document.querySelector('.js-scissors-btn').addEventListener('click', () => {
