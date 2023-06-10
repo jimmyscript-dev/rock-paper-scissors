@@ -5,15 +5,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 };
 
 updateScoreElement();
-/*
-if (!score) {
-  score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-  };
-}
-*/
+
 const rockBtnElem = document.querySelector('.js-rock-btn')
 const paperBtnElemc = document.querySelector('.js-paper-btn')
 const scissorsBtnElem = document.querySelector('.js-scissors-btn')
@@ -26,7 +18,7 @@ function playGame(playerMove) {
   if (playerMove === '✌') {
     if (computerMove === '✊') {
       result = 'You lose.';
-    } else if (computerMove === '🖐') {
+    } else if (computerMove === '✋') {
       result = 'You win.';
     } else if (computerMove === '✌') {
       result = 'Tie.';
@@ -35,7 +27,7 @@ function playGame(playerMove) {
   } else if (playerMove === '🖐') {
     if (computerMove === '✊') {
       result = 'You win.';
-    } else if (computerMove === '🖐') {
+    } else if (computerMove === '✋') {
       result = 'Tie.';
     } else if (computerMove === '✌') {
       result = 'You lose.';
@@ -44,7 +36,7 @@ function playGame(playerMove) {
   } else if (playerMove === '✊') {
     if (computerMove === '✊') {
       result = 'Tie.';
-    } else if (computerMove === '🖐') {
+    } else if (computerMove === '✋') {
       result = 'You lose.';
     } else if (computerMove === '✌') {
       result = 'You win.';
@@ -97,7 +89,7 @@ let startAutoPlay;
 //const autoPlay = () => {}
 function autoPlay() {
   const autoButton = document.querySelector('.auto-play')
-  if(!isPlaying) {
+  if (!isPlaying) {
     startAutoPlay = setInterval(() => {
       playerMove = pickComputerMove();
       playGame(playerMove);
@@ -131,7 +123,9 @@ document.querySelector('.auto-play').addEventListener('click', () => {
 
 
 function resetScore() {
-  score.wins = 0; score.losses = 0; score.ties = 0;
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
   updateScoreElement();
   localStorage.removeItem('score');
 }
@@ -150,7 +144,7 @@ function showResetOption() {
     resetScore();
     hideResetConfirmation();
   })
-  
+
   document.querySelector('.js-no-btn').addEventListener('click', () => {
     hideResetConfirmation();
   })
