@@ -2,6 +2,7 @@ body {
   font-family: Arial;
   background: black;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .js-rock-btn {
@@ -100,7 +101,8 @@ body {
   font-weight: bold;
 }
 
-.js-yes-btn, .js-no-btn {
+.js-yes-btn,
+.js-no-btn {
   background: #FFFA52;
   color: black;
   font-size: 15px;
@@ -108,4 +110,11 @@ body {
   border-radius: 20px;
   border: none;
   align-items: center;
+}
+
+h6 {
+  margin-top: 0px;
+  color: #f9f9f9;
+  font-weight: 200;
+  margin-bottom: 100px;
 }
