@@ -135,11 +135,6 @@ document.querySelector('.js-reset').addEventListener('click', () => {
 })
 
 function showResetOption() {
-  /*document.querySelector('.js-show-reset-confirmation').innerHTML = `
-  Are you sure you want to reset?
-  <button class="js-yes-btn">Yes</button>
-  <button class="js-no-btn">No</button>
-  `*/
   let reset = confirm('Do you want to reset your score?')
   if (reset === true) {
     resetScore()
