@@ -24,7 +24,7 @@ function playGame(playerMove) {
       result = 'Tie.';
     }
 
-  } else if (playerMove === '🖐') {
+  } else if (playerMove === '✋') {
     if (computerMove === '✊') {
       result = 'You win.';
     } else if (computerMove === '✋') {
