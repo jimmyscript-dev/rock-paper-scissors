@@ -135,22 +135,13 @@ document.querySelector('.js-reset').addEventListener('click', () => {
 })
 
 function showResetOption() {
-  document.querySelector('.js-show-reset-confirmation').innerHTML = `
+  /*document.querySelector('.js-show-reset-confirmation').innerHTML = `
   Are you sure you want to reset?
   <button class="js-yes-btn">Yes</button>
   <button class="js-no-btn">No</button>
-  `
-  document.querySelector('.js-yes-btn').addEventListener('click', () => {
-    resetScore();
-    hideResetConfirmation();
-  })
-
-  document.querySelector('.js-no-btn').addEventListener('click', () => {
-    hideResetConfirmation();
-  })
-}
-
-
-function hideResetConfirmation() {
-  document.querySelector('.js-show-reset-confirmation').innerHTML = ''
+  `*/
+  let reset = confirm('Do you want to reset your score?')
+  if (reset === true) {
+    resetScore()
+  }  
 }
