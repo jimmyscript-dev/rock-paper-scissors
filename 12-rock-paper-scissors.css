@@ -1,0 +1,111 @@
+body {
+  font-family: Arial;
+  background: black;
+  text-align: center;
+}
+
+.js-rock-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 35px;
+  background: transparent;
+  border-color: #FFFA52;
+  border-style: solid;
+  margin-right: 10px;
+}
+
+.js-paper-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 35px;
+  background: transparent;
+  border-color: #FFFA52;
+  border-style: solid;
+  margin-right: 10px;
+}
+
+.js-scissors-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 35px;
+  background: transparent;
+  border-color: #FFFA52;
+  border-style: solid;
+}
+
+.js-moves {
+  font-size: 18px;
+  color: #f9f9f9;
+}
+
+.js-reset {
+  border: solid #FFFA52;
+  background: transparent;
+  color: #FFFA52;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.35s;
+}
+
+.js-reset:active {
+  background: #FFFA52;
+  color: black;
+}
+
+.js-result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f9f9f9;
+}
+
+.js-score {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFA52;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.auto-play {
+  background: #FFFA52;
+  color: black;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.35s;
+}
+
+.is-stopped {
+  border: solid #FFFA52;
+  background: transparent;
+  color: #FFFA52;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.35s;
+}
+
+.js-show-reset-confirmation {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.js-yes-btn, .js-no-btn {
+  background: #FFFA52;
+  color: black;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  align-items: center;
+}
